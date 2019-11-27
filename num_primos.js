@@ -1,5 +1,6 @@
+// declaramos el array
 const arr = [0,13,14,3]
-
+// se declara la funcion para que realize la operacion de numeros primos
 var primo = (n) => {
     if (n === 1) {
         return false
@@ -12,7 +13,8 @@ var primo = (n) => {
     }
     return true;
 }
-
+// se pasa el filtro a la funcion
 var x = arr.filter(primo)
 
+// se imprime el resultado
 console.log(x)
