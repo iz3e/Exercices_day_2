@@ -14,8 +14,9 @@ getModelo(){
 }
 //creacion de clase hija taxi
 class taxi extends carro{
-    constructor(noLicencia){
-        super(noLicencia,noLicencia)
+    constructor(placa,modelo,noLicencia){
+        super(placa, modelo)
+        this.noLicencia = noLicencia
     }
 // metodos para obtener la licencia del taxi
 getNumeroLicencia(){
@@ -27,8 +28,9 @@ setNumeroLicencia(nl){
 }
 // creacion de clase hija plazas
 class plazas extends carro{
-    constructor(noPlazas){
-        super(noPlazas)
+    constructor(placa, modelo, noPlazas){
+        super(placa, modelo)
+        this.noPlazas = noPlazas
     }
 // metodos para ala obtencion del numero de plazas
 getNumeroPlazas(){

@@ -9,7 +9,7 @@ var primo = (n) => {
     return true;
 }
 // se pasa el filtro a la funcion
-var x = arr.filter(primo)
+var x = arr.filter(primo).sort()
 
 // se imprime el resultado
-console.log(x.)
+console.log(x)
